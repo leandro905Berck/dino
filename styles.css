@@ -29,8 +29,17 @@ body {
 .cactus {
     position: absolute;
     bottom: 0;
-    right: -50px;
     width: 20px;
     height: 40px;
     background-color: #f00;
+    animation: moveCactus 2s linear infinite;
+}
+
+@keyframes moveCactus {
+    0% {
+        right: -20px;
+    }
+    100% {
+        right: 100%;
+    }
 }
